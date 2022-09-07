@@ -3,4 +3,4 @@ for c in range(ord("z"), ord("a") -1, -1):
     if c % 2 == 1:
         c = c - 32
     else:
-        print(F"{c}", end=", ")
+        print("{}".format(c), end=", ")
