@@ -2,5 +2,4 @@
 for c in range(ord("z"), ord("a") -1, -1):
     if c % 2 == 1:
         c = c - 32
-    else:
-        print("{:c}".format(c), end="")
+    print("{:c}".format(c), end="")
