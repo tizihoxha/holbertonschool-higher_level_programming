@@ -2,4 +2,4 @@
 def print_reversed_list_initeger(my_list=[]):
     reversed_list = my_list[::-1]
     for i in len(reversed_list):
-        print("{:d}".format(reversed_list)
+        print("{:d}".format(reversed_list[i])
