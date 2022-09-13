@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    for elem in (matrix):
-        new_matrix.append(elem**2)
+    new_matrix = [list(map(lambda x: x**2, elem))for elem in matrix]
     return (new_matrix)
+
