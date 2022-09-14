@@ -6,8 +6,8 @@ def roman_to_int(roman_string):
     if roman_string is None or not isinstance(roman_string, str):
         return (0)
     for i in range(len(roman_string)):
-        if i == (len(roman_strin) - 1):
-            res = res + roman_dict[roman_strin[i]]
+        if i == (len(roman_string) - 1):
+            res = res + roman_dict[roman_string[i]]
         else:
             if roman_dict[roman_string[i] >= roman_dict[roman_string[i + 1]:
                 res = res + roman_dict[roman_string[i]]
