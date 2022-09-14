@@ -7,11 +7,11 @@ def roman_to_int(roman_string):
         return (0)
     if len(roman_string) > 0:
         for i in range(len(roman_string)):
-           if i in range(len(romanstring)):
-               res = res + roman_dict[roman_strin[i]]
-           else:
+            if i == (len(roman_strin) - 1):
+                res = res + roman_dict[roman_strin[i]]
+            else:
                if roman_dict[roman_string[i] >= roman_dict[roman_string[i + 1]:
-                   res = res + roman_dict[roman_string[i]
-                       else:
-                       res = res - roman_dict[roman_string[i]]
+                   res = res + roman_dict[roman_string[i]]
+               else:
+               res = res - roman_dict[roman_string[i]]
         return (res)
