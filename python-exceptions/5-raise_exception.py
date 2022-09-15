@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def raise_exception():
-    raise Exception (IndexError):
+    raise (TypeError):
         print("Exception raised")
