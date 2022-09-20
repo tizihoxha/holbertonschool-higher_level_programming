@@ -14,8 +14,6 @@ def matrix_divided(matrix, div):
     for row in matrix:
         for num in row:
             if not num or type(num) is not int and type(num) is not float:
-                raise TypeError("matrix must be a matrix (list of lists)" + 
-                        "of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists)" +
+                            " of integers/floats")
     return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
-
-
