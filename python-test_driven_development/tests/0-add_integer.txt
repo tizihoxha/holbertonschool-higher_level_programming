@@ -26,6 +26,7 @@ Adding a float and an negative int
 Adding with 0
     >>> add_integer(100, 0)
     100
+
 Adding when first int is 0
     >>> add_integer(0)
     98
