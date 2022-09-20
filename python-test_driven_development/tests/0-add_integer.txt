@@ -1,0 +1,57 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+Importing add_integer from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding two integers
+    >>> add_integer(1, 4)
+    5
+
+Adding with a negative number
+    >>> add_integer(100, -2)
+    98
+
+Adding a float and an int
+    >>> add_integer(2.3, 95)
+    97
+
+Adding a float and an negative int
+    >>> add_integer(98.3, -2)
+    96
+
+Adding with 0
+    >>> add_integer(100, 0)
+    100
+
+Adding two negative floats
+    >>> add_integer(-13.3, -12.1)
+    -15
+
+Adding a int and a string
+   >>> add_integer("Hello", 2)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+Adding two letters
+  >>> add_integer("c", "d")
+  Traceback (most recent call last):
+  TypeError: a must be an integer
+
+Adding three int
+  >>> add_integer(13, 14, -17)
+  Traceback (most recent call last):
+  TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Adding int with non int
+  >>> add_integer(3, i)
+  Traceback (most recent call last):
+  NameError: name 'i' is not defined
+
+
+
+
+   
