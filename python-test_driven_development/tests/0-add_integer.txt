@@ -37,9 +37,9 @@ Adding a int and a string
    TypeError: a must be an integer
 
 Adding two letters
-  >>> add_integer("c", "d")
+  >>> add_integer(2, "d")
   Traceback (most recent call last):
-  TypeError: a must be an integer
+  TypeError: b must be an integer
 
 Adding three int
   >>> add_integer(13, 14, -17)
