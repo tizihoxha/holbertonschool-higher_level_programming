@@ -29,7 +29,7 @@ Adding with 0
 
 Adding two negative floats
     >>> add_integer(-13.3, -12.1)
-    -15
+    -25
 
 Adding a int and a string
    >>> add_integer("Hello", 2)
