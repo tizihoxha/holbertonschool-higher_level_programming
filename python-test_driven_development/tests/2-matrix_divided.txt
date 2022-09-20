@@ -1,0 +1,39 @@
+The `2-matrix_devided`` module
+============================
+
+Using ``matrix_devided``
+---------------------
+
+Importing add_integer from the module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Divide matrix by 0
+    >>> matrix_devided([[1, 2, 3], [4, 5, 6]], 0)
+    Traceback (most recent call last):
+    NameError: name 'matrix_devided' is not defined
+
+Divide matrix by 3
+    >>> matrix_devided([[1, 2, 3], [4, 5, 6]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Divide matrix by string
+    >>> matrix_devided([[1, 2, 3], [4, 5, 6]], "hello")
+    Traceback (most recent call last):
+    NameError: name 'matrix_devided' is not defined
+
+Empty matrix:
+    >>> matrix_divided([], 9)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+    
+Tuple as an argument:
+    >>> matrix_divided((4, 5, 6), 3)
+    Traceback (most recent call last):
+    TypeError: object of type 'int' has no len()
+
+
+Dividing a matrix with != rows
+    >>> matrix_divided([[22, 66], [19,3, 93, -5, 2], [12]], 3)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
