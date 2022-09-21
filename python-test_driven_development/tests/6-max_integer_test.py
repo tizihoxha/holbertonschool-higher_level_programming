@@ -25,8 +25,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1]), 1)
 
     def test_empty(self):
-        self.assertEqual(max_integer())
-
-if __name__== "__main__":
-   unittest.main()
-
+        empy_list = []
+        self.assertEqual(max_integer(empty_list), None)
