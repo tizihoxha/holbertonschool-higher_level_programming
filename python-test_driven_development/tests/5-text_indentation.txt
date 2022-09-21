@@ -24,5 +24,5 @@ Print text that has , and no space after:
 
 Print nothing
       >>> text_indentation()
-      Traceback (most recent call last)
-      NameError: name 'text_indentation' is not defined
+      Traceback (most recent call last):
+      TypeError: text_indentation() missing 1 required positional argument: 'text'
