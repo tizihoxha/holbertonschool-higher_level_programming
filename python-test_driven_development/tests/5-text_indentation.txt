@@ -21,3 +21,8 @@ Print text that has , and no space after:
       Lorem.
       <BLANKLINE>
       ipsum
+
+Print nothing
+      >>> text_identation()
+      Traceback (most recent call last)
+      NameError: name 'text_identation' is not defined
