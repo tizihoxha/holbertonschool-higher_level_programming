@@ -16,5 +16,5 @@ def text_indentation(text):
         new_string += text[i]
         if text[i] in s:
             new_string += "\n" + "\n"
-            flag = 0
+            flag = 1
     print(new_string, end="")
