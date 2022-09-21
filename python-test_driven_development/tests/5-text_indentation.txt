@@ -23,6 +23,6 @@ Print text that has , and no space after:
       ipsum
 
 Print nothing
-      >>> text_identation()
+      >>> text_indentation()
       Traceback (most recent call last)
       NameError: name 'text_indentation' is not defined
