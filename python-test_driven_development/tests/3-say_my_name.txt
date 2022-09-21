@@ -16,10 +16,6 @@ Printing if fist name is int or float
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-Printing only first name
-    >>> say_my_name("Bob")
-    My name is Bob
-
 Printing empty module
     >>> say_my_name()
     Traceback (most recent call last):
