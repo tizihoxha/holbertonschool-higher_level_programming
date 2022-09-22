@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """Task 1"""
 
+
 class Rectangle:
     """class Rectangle that defines a rectangle"""
 
-
-    def __init__(self, width =0, height=0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
@@ -24,7 +24,6 @@ class Rectangle:
     @property
     def height(self):
         return (self.__height)
-
 
     @height.setter
     def height(self, value):
