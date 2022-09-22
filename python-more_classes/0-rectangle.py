@@ -4,4 +4,3 @@
 
 class Rectangle:
     """empty class Rectangle that defines a rectangle"""
-    def Rectangle(self, size):
