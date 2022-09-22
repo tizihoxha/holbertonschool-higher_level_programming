@@ -53,4 +53,3 @@ class Rectangle:
                     rectangle.append("\n")
         rectangle = "".join(rectangle)
         return (rectangle)
-
