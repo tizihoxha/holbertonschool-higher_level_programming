@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task 2"""
+"""Task 3"""
 
 
 class Rectangle:
@@ -40,9 +40,11 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return (2 * (self.__width + self.__height))
+
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ("")
+
     def print(self):
         for i in range(self.__height):
             ("") = ("") + ("#" * self.__width) + "\n"
