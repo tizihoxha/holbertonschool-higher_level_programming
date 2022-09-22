@@ -15,9 +15,9 @@ def __init__(self, width =0, height=0):
 
     @width.setter:
         def width(self, value):
-            if type(width) is not int:
+            if type(value) is not int:
                 raise TypeError("width must be an integer")
-            if width < 0:
+            if value < 0:
                 raise ValueError("width must be >= 0")
             self.__width = value
 
@@ -28,8 +28,8 @@ def __init__(self, width =0, height=0):
 
     @height.setter:
         def height(self, value):
-            if type(height) is not int:
+            if type(value) is not int:
                 raise TypeError("height must be an integer")
-            if height < 0:
+            if value < 0:
                 raise ValueError("Height must be >= 0")
             self.__height = value
