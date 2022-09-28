@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task 6"""
+""" Task 7"""
 
 
 class BaseGeometry:
