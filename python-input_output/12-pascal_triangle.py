@@ -12,7 +12,7 @@ def pascal_triangle(n):
         row = [1]
         if new_list:
             last_row = new_list[-1]
-            new_list.extened([sum(pair) for pair in zip(last_row, last_row[1:])])
+            new_list.extend([sum(pair) for pair in zip(last_row, last_row[1:])])
             row.append(1)
         new_list.append(row)
     return new_list
