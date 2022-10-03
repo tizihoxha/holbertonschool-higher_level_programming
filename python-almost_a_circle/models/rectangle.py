@@ -96,3 +96,8 @@ class Rectangle(Base):
         """__str__ method so that it returns [Rectangle]"""
         return (F"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
                 F"{self.__width}/{self.__height}")
+
+    def update(self, *args):
+        list1 = ["id", "width", "height", "x", "y"]
+        for i in range(len(args)):
+            setattr(self, list1[i], args[i])
