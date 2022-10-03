@@ -6,6 +6,24 @@ from models.base import Base
 class Rectangle(Base):
     """class Rectangle created"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        if type(width) is not int:
+            TypeError("width must be an integer")
+        if width <= 0:
+            ValueError("width must be > 0")
+        if type(height) is not int:
+            TypeError("height must be an integer")
+        if height <= 0:
+            ValueError("height must be > 0")
+        if type(x) is not int:
+            TypeError("x must be an integer")
+        if x < 0:
+            ValueError("x must be >= 0")
+        if type(y) is not int:
+            TypeError("y must be an integer")
+        if y < 0:
+            ValueError("y must be >= 0")
+
+
         self.__width = width
         self.__height = height
         self.__x = x
