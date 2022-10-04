@@ -59,5 +59,3 @@ class Base:
                 for inst in list_json:
                     list_d.append(cls.create(**inst))
                 return list_d
-        else:
-            return "[]"
