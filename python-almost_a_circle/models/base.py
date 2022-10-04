@@ -36,7 +36,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """returns the list of the JSON string representation""" 
+        """returns the list of the JSON string representation"""
         if json_string is None or len(json_string) == "[]":
             return ("[]")
         else:
@@ -59,3 +59,5 @@ class Base:
                 for inst in list_json:
                     list_d.append(cls.create(**inst))
                 return list_d
+        else:
+            return []
