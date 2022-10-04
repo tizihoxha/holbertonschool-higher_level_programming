@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Task 1"""
 import json
-import os
+from os import path
 
 
 class Base:
@@ -18,6 +18,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """JSON string representation of list_dictionaries"""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return ("[]")
         else:
@@ -25,6 +26,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
+        """JSON string representation of list_objs to a file"""
         with open(F"{cls.__name__}.json", "w", encoding="UTF-8") as f:
             if list_objs is None:
                 f.write("[]")
@@ -34,6 +36,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """returns the list of the JSON string representation""" 
         if json_string is None or len(json_string) == "[]":
             return ("[]")
         else:
@@ -41,7 +44,20 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """returns an instance"""
         dummy = cls(1, 1)
         dummy.update(**dictionary)
         return dummy
 
+    @classmethod
+    def load_from_file(cls):
+        """returning a list of instances"""
+        list_d = []
+        if path.exists(F"{cls.__name__}.json"):
+            with open(F"{cls.__name__}.json", "r", encoding="UTF-8") as f:
+                list_json = cls.from_json_string(f.read())
+                for inst in list_json:
+                    list_d.append(cls.create(**inst))
+                return list_d
+        else:
+            return "[]"
