@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Task 1"""
 import json
+import os
 
 
 class Base:
@@ -23,12 +24,11 @@ class Base:
             return (json.dumps(list_dictionaries))
 
     @classmethod
-    filename = cls.__name + ".json"
     def save_to_file(cls, list_objs):
-        with open(filename, "w", encoding="UTF-8") as f:
+        with open(F"{cls.__name__}.json", "w", encoding="UTF-8") as f:
             if list_objs is None:
                 f.write("[]")
             else:
-                dict_l = [i.to_dictionary for i in list_objs]
+                dict_l = [i.to_dictionary() for i in list_objs]
                 f.write(Base.to_json_string(dict_l))
 
