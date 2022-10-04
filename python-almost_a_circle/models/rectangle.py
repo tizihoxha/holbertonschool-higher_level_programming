@@ -47,7 +47,8 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
-        if type(width) is not int: raise TypeError("width must be an integer")
+        if type(width) is not int: 
+            raise TypeError("width must be an integer")
         if width <= 0:
             raise ValueError("width must be > 0")
         self.__width = width
@@ -109,7 +110,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """returning a dictionary rectangle"""
         my_dict = {
-                "id": super().__init__(id),
+                "id": self.id,
                 "width": self.__width,
                 "height": self.__height,
                 "x": self.__x,
