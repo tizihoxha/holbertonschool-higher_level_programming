@@ -80,7 +80,7 @@ class Base:
         if path.exists(F"{cls.__name__}.csv"):
             with open(F"{cls.__name__}.csv", "r", encoding="UTF-8") as f:
                 list_csv = Base.from_json_string(f.read())
-                for inst in list_json:
+                for inst in list_csv:
                     list_d.append(cls.create(**inst))
                 return list_d
         else:
