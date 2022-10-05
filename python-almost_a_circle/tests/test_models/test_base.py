@@ -1,0 +1,35 @@
+#!/usr/bin/python3
+import unittest
+from models.base import Base
+"""Tests"""
+
+
+class BaseTest(unittest.TestCase):
+    """Test class"""
+    def id_none(self):
+        inst = Base()
+        self.assertEqual(1, inst.id)
+
+    def test_id(self):
+        inst = Base(15)
+        self.assertEqual(15, inst.id)
+
+    def negative_id(self):
+        inst = Base(-4)
+        self.assertEqual(-4, inst.id)
+
+    def zero_id(self):
+        inst = Base(0)
+        self.assertEqual(0, inst.id)
+
+    def id_is_string(self):
+        inst = Base("Hello")
+        self.assertEqual("Hello", inst.id)
+
+    def id_is_list(self):
+        inst = Base([1, 2, 3])
+        self.assertEqual([1, 2, 3], inst.id)
+
+    def id_is_tuple(self):
+        inst = Base((1, ))
+        self.assertEqual((1, ), inst.id)
