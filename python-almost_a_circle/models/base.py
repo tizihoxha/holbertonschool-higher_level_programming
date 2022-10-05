@@ -64,3 +64,27 @@ class Base:
                 return list_d
         else:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes CSV"""
+        with open(F"{cls.__name__}.csv", "w", encoding="UTF-8") as f:
+            if list_objs is None:
+                f.write("[]")
+            else:
+                dict_l = [i.to_dictionary() for i in list_objs]
+                f.write(Base.to_json_string(dict_l))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes CSV"""
+        list_d = []
+        if path.exists(F"{cls.__name__}.csv"):
+            with open(F"{cls.__name__}.csv", "r", encoding="UTF-8") as f:
+                list_csv = cls.from_json_string(f.read())
+                for inst in list_json:
+                    list_d.append(cls.create(**inst))
+                return list_d
+        else:
+            return []
+
