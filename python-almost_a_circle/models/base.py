@@ -69,11 +69,9 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         """Serializes CSV"""
         with open(F"{cls.__name__}.csv", "w", encoding="UTF-8") as f:
-            if list_objs is None:
-                f.write("[]")
-            else:
+            if list_objs is not None:
                 dict_l = [i.to_dictionary() for i in list_objs]
-                f.write(Base.to_json_string(dict_l))
+            f.write(Base.to_json_string(dict_l))
 
     @classmethod
     def load_from_file_csv(cls):
