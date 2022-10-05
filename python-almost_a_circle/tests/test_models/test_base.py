@@ -36,3 +36,11 @@ class BaseTest(unittest.TestCase):
     def test_id_is_tuple(self):
         inst = Base((1, ))
         self.assertEqual((1, ), inst.id)
+
+    def test_to_json(self):
+        json_string = Base.to_json_string(None)
+        self.assertEqual(json_string, "[]")
+
+    def test_from_json(self):
+        json_list = Base.from_json_string(None)
+        self.assertEqual(json_list, [])
