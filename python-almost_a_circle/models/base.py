@@ -85,4 +85,3 @@ class Base:
                 return list_d
         else:
             return []
-
