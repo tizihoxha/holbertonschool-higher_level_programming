@@ -124,3 +124,13 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(8, rect1.height)
         self.assertEqual(9, rect1.x)
         self.assertEqual(1, rect1.y)
+
+    def test_create_dir(self):
+         dict1 = {
+                "width": 1,
+                "height": 2,
+                "x": 3,
+                "y": 4,
+                "id": 5
+                }
+         rect1 = Rectangle.create(**dict1)
