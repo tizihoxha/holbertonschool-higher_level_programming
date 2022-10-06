@@ -134,3 +134,7 @@ class TestRectangle(unittest.TestCase):
                 "id": 5
                 }
          rect1 = Rectangle.create(**dict1)
+         self.assertEqual(5, rect1.id)
+
+    def test_save_to_file(self):
+        rect1 = Rectangle(4, 5)
