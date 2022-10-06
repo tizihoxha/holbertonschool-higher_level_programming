@@ -134,7 +134,16 @@ class TestRectangle(unittest.TestCase):
                 "id": 5
                 }
          rect1 = Rectangle.create(**dict1)
-         self.assertEqual(5, rect1.id)
+         self.assertEqual(3, rect1.x)
 
     def test_save_to_file(self):
         rect1 = Rectangle(4, 5)
+        Rectangle.save_to_file([rect1])
+        with open("Rectangle.json", "r", encoding="utf-8") as f:
+            string = f.read()
+            self.assertEqual(str, type(string))
+
+    def test_save_to_file_none(self):
+        Rectangle.save_to_file(None)
+        with open("Rectangle.json", "r", encoding="utf-8") as f:
+            self.assertEqual('[]', f.read())
