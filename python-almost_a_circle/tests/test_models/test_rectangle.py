@@ -97,3 +97,30 @@ class TestRectangle(unittest.TestCase):
                 "id": 5
                 }
         self.assertEqual(dict1, rect1.to_dictionary())
+
+    def test_update_rect(self):
+        rect1 = Rectangle(1, 2, 3, 4, 5)
+        rect1.update(6)
+        self.assertEqual(6, rect1.id)
+
+    def test_update_two(self):
+        rect1 = Rectangle(1, 2, 3, 4, 5)
+        rect1.update(6, 7)
+        self.assertEqual(6, rect1.id)
+        self.assertEqual(7, rect1.width)
+
+    def test_update_three(self):
+        rect1 = Rectangle(1, 2, 3, 4, 5)
+        rect1.update(6, 7, 8)
+        self.assertEqual(6, rect1.id)
+        self.assertEqual(7, rect1.width)
+        self.assertEqual(8, rect1.height)
+
+    def test_update_five(self):
+        rect1 = Rectangle(1, 2, 3, 4, 5)
+        rect1.update(6, 7, 8, 9, 1)
+        self.assertEqual(6, rect1.id)
+        self.assertEqual(7, rect1.width)
+        self.assertEqual(8, rect1.height)
+        self.assertEqual(9, rect1.x)
+        self.assertEqual(1, rect1.y)
