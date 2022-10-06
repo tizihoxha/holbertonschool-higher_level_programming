@@ -146,3 +146,14 @@ class TestRectangle(unittest.TestCase):
         Rectangle.save_to_file(None)
         with open("Rectangle.json", "r", encoding="utf-8") as f:
             self.assertEqual("[]", f.read())
+
+    def test_to_empty_file(self):
+        Rectangle.save_to_file([])
+        with open("Rectangle.json", "r", encoding="utf-8") as f:
+            self.assertEqual("[]", f.read())
+
+    def test_load_from_file(self):
+        rect1 = Rectangle(1, 2, 3, 4, 5)
+        Rectangle.save_to_file([rect1])
+        list1 = Rectangle.load_from_file()
+        self.assertEqual(str(rect1), str(list1[0]))
