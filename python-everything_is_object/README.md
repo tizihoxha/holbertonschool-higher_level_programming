@@ -1,7 +1,7 @@
 # Python - Everything is object
 
 
-
+**In object-oriented programming languages like Python, an object is an entity that contains data along with associated metadata and/or functionality. In Python everything is an object, which means every entity has some metadata (called attributes) and associated functionality (called methods).** 
 
 
 
@@ -34,4 +34,13 @@ Files | Content
 [25-answer.txt](./25-answer.txt)| What does this script print
 [26-answer.txt](./26-answer.txt)| What does this script print
 [27-answer.txt](./27-answer.txt)| Will the last line of this script print `139926795932424`
-[28-answer.txt](./28-answer.txt)| Will the last line of this script print `139926795932424
+[28-answer.txt](./28-answer.txt)| Will the last line of this script print `139926795932424`
+[100-magic_string.py](./100-magic_string.py)| Python function `magic_string()` that returns the
+string `"Holberton"` n times the number of iteration.
+[101-locked_class.py](./101-locked_class.py)| Python class `LockedClass` with no attributes that
+prevents the user from dynamically creating any new instance attributes not
+called `first_name`
+ [103-line1.txt](./103-line1.txt)| How many `int` objects are created by the execution
+of the first line in this script?
+[104-line2.txt](./104-line2.txt)| How many `int` objects are created by the execution
+of the second line in this script
