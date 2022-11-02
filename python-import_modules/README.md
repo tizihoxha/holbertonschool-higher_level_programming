@@ -27,7 +27,7 @@ print(math.pi)
 
 Files | Content
 -------- | -----------
-[0-add.py](./ 0-add.py)| Import a simple function from a simple file
+[0-add.py](./0-add.py)| Import a simple function from a simple file
 [1-calculation.py](./1-calculation.py) | Python program that imports functions from the file calculator_1.py and prints the result of the addition, subtraction, multiplication and division of 10 and 5. 
 [2-args.py](./2-args.py)| Python program that prints the number of and list of its arguments.
 [3-infinite_add.py]( 3-infinite_add.py)| Python program that prints the result of the addition of all arguments. 
