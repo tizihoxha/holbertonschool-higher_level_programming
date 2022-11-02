@@ -2,7 +2,7 @@
 
 #### This repository contains the following:
 
-<img align="right" width="400" height="300" src="https://i.pinimg.com/originals/c2/6a/58/c26a58af112f4cad08629893409f32c5.jpg">
+<img align="right" width="550" height="370" src="https://i.pinimg.com/originals/c2/6a/58/c26a58af112f4cad08629893409f32c5.jpg">
 
 1. [Python - Hello, World](https://github.com/Tizihoxha/holbertonschool-higher_level_programming/tree/main/python-hello_world)
 2. [Python - if/else, loops, functions](https://github.com/Tizihoxha/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions)
