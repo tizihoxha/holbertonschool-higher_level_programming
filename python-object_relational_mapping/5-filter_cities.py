@@ -10,7 +10,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("SELECT cities.name FROM cities, states\
                 WHERE states.id = cities.state_id AND states.name = %s\
-                ORDER BY cities.id", (sys.argv[4], ))
+                ORDER BY cities.id", (argv[4], ))
     rows = cur.fetchall()
     separator = ""
     for row in rows:
