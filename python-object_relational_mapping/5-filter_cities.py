@@ -16,5 +16,6 @@ if __name__ == "__main__":
     for row in rows:
         print(separator, end="")
         print(row[0], end="")
+        separator = ", "
     cur.close()
     db.close()
