@@ -17,5 +17,6 @@ if __name__ == "__main__":
         print(separator, end="")
         print(row[0], end="")
         separator = ", "
+    print("\n", end="")
     cur.close()
     db.close()
