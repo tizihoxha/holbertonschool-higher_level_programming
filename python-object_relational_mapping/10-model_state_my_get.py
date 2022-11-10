@@ -12,7 +12,7 @@ if __name__ == "__main__":
                             @localhost/{argv[3]}")
     with Session(engine) as session:
         states = session.query(State).filter(State.name == argv[4]).first()
-        is states:
+        if states:
             print(F"{states.id}")
         else:
             print("Not found")
