@@ -8,7 +8,7 @@ import sys import argv
 
 
 if __name__ == "__main__":
-    engine = create_engine(F'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}')
+    engine = create_engine(F"mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}")
     with Session(engine) as session:
         states = session.query(State).order_by(State.id).all()
         for state in states:
