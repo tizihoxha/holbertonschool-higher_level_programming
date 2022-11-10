@@ -4,12 +4,11 @@
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-import sys
+import sys import argv
 
 
 if __name__ == "__main__":
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(\
-                            sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
+    engine = create_engine(F'mysql+mysqldb://{argv[1]}:{argv[2]}@localhost/{argv[3]}')
     with Session(engine) as session:
         states = session.query(State).order_by(State.id).all()
         for state in states:
