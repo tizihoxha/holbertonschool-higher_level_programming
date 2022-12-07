@@ -3,10 +3,6 @@
  script that prints 3 lines
  */
 
-const myVar = 'C is fun';
-const myvar = 'Python is cool';
-const Myvar = 'JavaScript is amazing';
-
-console.log(myVar);
-console.log(myvar);
-console.log(Myvar);
+console.log('C is fun');
+console.log('Python is cool');
+console.log('JavaScript is amazing');
