@@ -4,7 +4,7 @@
  */
 
 function factorial (n) {
-  if (!isNaN(n)) {
+  if (!NaN(n)) {
     return (n * factorial(n - 1));
   } else {
     return (1);
