@@ -126,18 +126,18 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(1, rect1.y)
 
     def test_create_dir(self):
-         dict1 = {
+        dict1 = {
                 "width": 1,
                 "height": 2,
                 "x": 3,
                 "y": 4,
                 "id": 5
                 }
-         rect1 = Rectangle.create(**dict1)
-         self.assertEqual(3, rect1.x)
+        rect1 = Rectangle.create(**dict1)
+        self.assertEqual(3, rect1.x)
 
     def test_save_to_file(self):
-        Rectangle.save_to_file([Rectangle(1,2)])
+        Rectangle.save_to_file([Rectangle(1, 2)])
         with open("Rectangle.json", "r", encoding="utf-8") as f:
             string = f.read()
             self.assertEqual(str, type(string))
