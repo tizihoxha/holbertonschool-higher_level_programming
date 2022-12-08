@@ -4,7 +4,7 @@
  */
 
 let args = 0;
-exports.logMee = function (item) {
+exports.logMe = function (item) {
   console.log(args + ':' + item);
   args++;
 };
