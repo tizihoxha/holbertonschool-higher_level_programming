@@ -1,4 +1,3 @@
-#!/usr/bin/node
 /*
  * JavaScript script that updates the text color of the <header>
  * */
